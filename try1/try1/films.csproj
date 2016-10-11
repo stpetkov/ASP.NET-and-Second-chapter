@@ -210,6 +210,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\web_site.png" />
     <Content Include="Register.aspx" />
     <Content Include="Login.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

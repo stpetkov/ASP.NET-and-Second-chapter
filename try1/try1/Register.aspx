@@ -56,6 +56,8 @@
                         <td class="auto-style2" >
                             <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style2" TabIndex="3">
                                 <asp:ListItem>Моля,изберете пол</asp:ListItem>
+                                <asp:ListItem>Мъж</asp:ListItem>
+                                <asp:ListItem>Жена</asp:ListItem>
                             </asp:DropDownList>
                             </td>
                     </tr>

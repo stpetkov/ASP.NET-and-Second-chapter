@@ -14,6 +14,16 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <style type="text/css">
+        .auto-style1 {
+            float: left;
+            padding: 15px 15px;
+            font-size: xx-large;
+            line-height: 20px;
+            color: #F29734;
+        }
+    </style>
+
 </head>
 <body>
     <form runat="server">
@@ -46,19 +56,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <asp:Label ID="Label1" runat="server" Text="Филмотека" class="auto-style1"></asp:Label>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="http://www.asp.net">Първоначална страница</a></li>
+                        <li><a runat="server" href="~/Contact">Контакти</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/Register.aspx">Регистрация</a></li>
+                                <li><a runat="server" href="~/Login.aspx">Вход</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
@@ -78,7 +87,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - © - УНСС</p>
             </footer>
         </div>
     </form>
