@@ -28,12 +28,17 @@
                     <tr>
                         <td>Потребителско име : </td>
                         <td class="auto-style1">
-                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Не сте въвели потребителско име !" Font-Bold="True" ControlToValidate="TextBox1" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </td>
+                        
                     </tr>
                     <tr>
                         <td>Парола : </td>
                         <td class="auto-style1">
-                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
+                            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Не сте въвели парола !" Font-Bold="True" ControlToValidate="TextBox2" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </td>
                     </tr>
                     <tr><td colspan="2" align="right";><asp:Button ID="Button1" runat="server" Text="Вход" /></td></tr>
                     <tr><td colspan="2"><asp:Button ID="Button2" runat="server" Text="Забравена парола" OnClick="Button2_Click" /></td></tr>
@@ -50,7 +55,9 @@
                     <tr>
                         <td>Таен отговор : </td>
                         <td class="auto-style2">
-                            <asp:TextBox ID="TextBox4" runat="server" Width="450px"></asp:TextBox></td>
+                            <asp:TextBox ID="TextBox4" runat="server" Width="450px"></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Не сте въвели таен отговор" Font-Bold="True" ControlToValidate="TextBox4" ForeColor="Red"></asp:RequiredFieldValidator>
+                        </td>
                     </tr>
                     <tr><td colspan="2" align="right";><asp:Button ID="Button3" runat="server" Text="Виж парола" OnClick="Button3_Click" /></td></tr>
                     <tr>
@@ -64,7 +71,10 @@
                     <tr>
                         <td>Мобилен телефон : +359</td>
                         <td class="auto-style3">
-                            <asp:TextBox ID="TextBox3" runat="server" Width="450px"></asp:TextBox></td>
+                            <asp:TextBox ID="TextBox3" runat="server" Width="450px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Не сте въвели мобилен телефон" Font-Bold="True" ControlToValidate="TextBox3" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Не сте въвели коректен мобилен телефон" BackColor="Red" Font-Bold="True" ControlToValidate='TextBox3' ValidationExpression=".{9,9}"></asp:RegularExpressionValidator>
+                        </td>
                     </tr>
                     <tr><td colspan="2" align="right";><asp:Button ID="Button4" runat="server" Text="Виж парола" Width="107px" OnClick="Button4_Click" /></td></tr>
                     <tr>

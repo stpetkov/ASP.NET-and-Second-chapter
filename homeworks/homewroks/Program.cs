@@ -4,17 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        for(int i = 2; i < 1002; i++)
+        for(int i = 1; i < 1000; i++)
         {
-            if (i % 2 == 0)
-            {
-                Console.WriteLine(i);
-            }
-            else
-            {
-                Console.WriteLine("-"+i);
-            }
-        }     
+            Console.WriteLine((char)i);
+        }
     }
 }
 
